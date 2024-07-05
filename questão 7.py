@@ -5,7 +5,7 @@ quantidade=int(input("quantidade de pescadores a serem analisados: "))
 for i in range(quantidade):
     nome=str(input("Nome do pescador: "))
     kilos=float(input("quantidade de peixe (kg): "))
-    dicionario[i]= {nome:kilos}
+    dicionario[i]= {nome:kilos} #chave do dicionário, chave do valor e o valor
 for nome,kilos in dicionario.items():
     excesso = kilos - 80
     if excesso > 0:
